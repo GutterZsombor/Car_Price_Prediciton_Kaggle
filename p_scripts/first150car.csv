@@ -1,0 +1,151 @@
+ID,Price,Levy,Manufacturer,Model,Prod. year,Category,Leather interior,Fuel type,Engine volume,Mileage,Cylinders,Gear box type,Drive wheels,Doors,Wheel,Color,Airbags
+45654403,13328,1399,LEXUS,RX 450,2010,Jeep,Yes,Hybrid,3.5,186005 km,6.0,Automatic,4x4,04-May,Left wheel,Silver,12
+44731507,16621,1018,CHEVROLET,Equinox,2011,Jeep,No,Petrol,3,192000 km,6.0,Tiptronic,4x4,04-May,Left wheel,Black,8
+45774419,8467,-,HONDA,FIT,2006,Hatchback,No,Petrol,1.3,200000 km,4.0,Variator,Front,04-May,Right-hand drive,Black,2
+45769185,3607,862,FORD,Escape,2011,Jeep,Yes,Hybrid,2.5,168966 km,4.0,Automatic,4x4,04-May,Left wheel,White,0
+45809263,11726,446,HONDA,FIT,2014,Hatchback,Yes,Petrol,1.3,91901 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45802912,39493,891,HYUNDAI,Santa FE,2016,Jeep,Yes,Diesel,2,160931 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+45656768,1803,761,TOYOTA,Prius,2010,Hatchback,Yes,Hybrid,1.8,258909 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+45816158,549,751,HYUNDAI,Sonata,2013,Sedan,Yes,Petrol,2.4,216118 km,4.0,Automatic,Front,04-May,Left wheel,Grey,12
+45641395,1098,394,TOYOTA,Camry,2014,Sedan,Yes,Hybrid,2.5,398069 km,4.0,Automatic,Front,04-May,Left wheel,Black,12
+45756839,26657,-,LEXUS,RX 350,2007,Jeep,Yes,Petrol,3.5,128500 km,6.0,Automatic,4x4,04-May,Left wheel,Silver,12
+45621750,941,1053,MERCEDES-BENZ,E 350,2014,Sedan,Yes,Diesel,3.5,184467 km,6.0,Automatic,Rear,04-May,Left wheel,White,12
+45814819,8781,-,FORD,Transit,1999,Microbus,No,CNG,4,0 km,8.0,Manual,Rear,02-Mar,Left wheel,Blue,0
+45815568,3000,-,OPEL,Vectra,1997,Goods wagon,No,CNG,1.6,350000 km,4.0,Manual,Front,04-May,Left wheel,White,4
+45661288,1019,1055,LEXUS,RX 450,2013,Jeep,Yes,Hybrid,3.5,138038 km,6.0,Automatic,Front,04-May,Left wheel,White,12
+45732604,59464,891,HYUNDAI,Santa FE,2016,Jeep,Yes,Diesel,2,76000 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+45465200,549,1079,TOYOTA,CHR,2018,Jeep,Yes,Petrol,2,74146 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+45772281,7683,810,HYUNDAI,Elantra,2016,Sedan,Yes,Petrol,1.8,121840 km,4.0,Automatic,Front,04-May,Left wheel,Blue,12
+45797221,28382,810,HYUNDAI,Elantra,2016,Sedan,Yes,Petrol,1.8,54317 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+45772104,549,2386,HYUNDAI,Sonata,2006,Sedan,Yes,Petrol,3.3,295059 km,6.0,Automatic,Rear,04-May,Left wheel,Blue,12
+45653306,941,1850,LEXUS,RX 400,2008,Jeep,Yes,Hybrid,3.5,364523 km,6.0,Automatic,4x4,04-May,Left wheel,Black,12
+45801686,18826,531,HYUNDAI,Elantra,2012,Sedan,Yes,Petrol,1.6,112645 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45168471,20698,586,TOYOTA,Prius,2012,Sedan,Yes,Plug-in Hybrid,1.8,187000 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+45751951,17562,1249,TOYOTA,Camry,2017,Sedan,Yes,Petrol,2.5,39709 km,4.0,Automatic,Front,04-May,Left wheel,Black,12
+45814106,7840,-,FORD,Transit,2001,Microbus,No,Diesel,2.0 Turbo,230000 km,4.0,Manual,Front,02-Mar,Left wheel,White,0
+45813492,4704,-,OPEL,Vectra,1995,Sedan,No,Petrol,1.8,0 km,4.0,Automatic,Front,04-May,Left wheel,Green,4
+45782859,20385,-,MERCEDES-BENZ,E 220,2006,Sedan,Yes,Diesel,2.2 Turbo,210000 km,4.0,Tiptronic,Rear,04-May,Left wheel,Black,8
+45759112,549,2455,LEXUS,GX 470,2008,Jeep,Yes,Petrol,4.7,0 km,8.0,Automatic,4x4,04-May,Left wheel,White,0
+45804684,30,-,TOYOTA,Prius,2008,Sedan,No,Hybrid,1.5,169000 km,4.0,Automatic,Front,04-May,Left wheel,White,8
+45801525,14454,583,HYUNDAI,Elantra,2011,Sedan,Yes,Petrol,1.6,158787 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45768550,12074,1537,TOYOTA,Highlander,2009,Jeep,Yes,Hybrid,3.3,420550 km,6.0,Automatic,4x4,04-May,Left wheel,Blue,12
+44944581,15681,1288,MERCEDES-BENZ,Vito,2007,Goods wagon,No,Diesel,2.0 Turbo,180000 km,6.0,Manual,Rear,04-May,Left wheel,White,4
+45760983,19444,915,PORSCHE,Cayenne,2014,Jeep,Yes,Diesel,3,175056 km,6.0,Automatic,4x4,04-May,Left wheel,White,12
+45790136,6899,-,BMW,X5,2000,Jeep,Yes,CNG,4.4,200000 km,8.0,Automatic,4x4,04-May,Left wheel,Silver,6
+45770026,125,1750,TOYOTA,Highlander,2008,Sedan,Yes,Hybrid,3.3,287274 km,6.0,Automatic,4x4,04-May,Left wheel,White,12
+45542380,24462,-,JEEP,Grand Cherokee,2007,Jeep,Yes,Diesel,3.0 Turbo,250000 km,6.0,Tiptronic,4x4,04-May,Left wheel,Black,10
+45732374,23235,707,HYUNDAI,Santa FE,2011,Jeep,Yes,Diesel,2,162000 km,4.0,Automatic,Front,04-May,Left wheel,Grey,4
+45369569,51746,1077,TOYOTA,CHR Limited,2019,Jeep,No,Petrol,2,10200 km,4.0,Tiptronic,Front,04-May,Left wheel,Red,12
+45642526,7527,1486,HONDA,FIT,2010,Hatchback,No,Hybrid,1.3,158000 km,4.0,Automatic,Front,04-May,Right-hand drive,Black,4
+45801668,19121,531,HYUNDAI,Elantra,2012,Sedan,Yes,Petrol,1.6,103490 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45661296,314,1399,LEXUS,RX 450,2010,Jeep,Yes,Hybrid,3.5,382746 km,6.0,Automatic,4x4,04-May,Left wheel,Silver,12
+45815051,24462,751,TOYOTA,Camry,2013,Sedan,Yes,Petrol,2.4,203200 km,4.0,Automatic,Front,04-May,Left wheel,Blue,4
+45797488,45734,1091,HYUNDAI,H1,2016,Universal,Yes,Diesel,2.5,61057 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45667253,20165,650,VOLKSWAGEN,Jetta,2016,Sedan,Yes,Petrol,1.4 Turbo,11200 km,4.0,Tiptronic,Front,04-May,Left wheel,Black,8
+45108412,21326,382,HYUNDAI,Sonata,2014,Sedan,Yes,Hybrid,2.4,141000 km,4.0,Tiptronic,Front,04-May,Left wheel,White,12
+45810322,549,1436,PORSCHE,Cayenne,2010,Jeep,Yes,Petrol,3.6,160259 km,6.0,Automatic,4x4,04-May,Left wheel,Silver,12
+45769564,220,1194,TOYOTA,Tacoma,2013,Jeep,Yes,Petrol,4,239342 km,6.0,Automatic,4x4,04-May,Left wheel,Silver,12
+45726453,15681,503,TOYOTA,Prius C,2012,Hatchback,No,Hybrid,1.5,128000 km,4.0,Variator,Front,04-May,Left wheel,Sky blue,8
+45732544,55390,1017,HYUNDAI,Santa FE,2017,Jeep,Yes,Diesel,2,100734 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45811563,12544,-,TOYOTA,Aqua,2012,Hatchback,No,Hybrid,1.5,141500 km,4.0,Automatic,Front,04-May,Right-hand drive,Black,8
+45699930,17249,-,FORD,Escape Hybrid,2008,Jeep,No,Hybrid,2.3,147000 km,4.0,Variator,4x4,04-May,Left wheel,White,8
+45809839,34889,891,HONDA,Civic,2016,Sedan,Yes,Petrol,2,87768 km,4.0,Automatic,Front,04-May,Left wheel,Blue,4
+45767508,862,1104,AUDI,Q7,2015,Jeep,Yes,Petrol,3,264014 km,6.0,Automatic,4x4,04-May,Left wheel,Black,0
+45802148,14583,-,RENAULT,Megane 1.5CDI,2008,Sedan,No,Diesel,1.5 Turbo,132542 km,4.0,Manual,Front,04-May,Left wheel,White,10
+45769316,392,1017,MERCEDES-BENZ,E 300,2017,Sedan,Yes,Petrol,2,1600 km,4.0,Automatic,Rear,04-May,Left wheel,Black,12
+44153312,38500,639,AUDI,Q5,2014,Jeep,Yes,Petrol,2,87000 km,1.0,Tiptronic,4x4,04-May,Left wheel,White,12
+45782169,8781,-,MERCEDES-BENZ,C 180,2001,Coupe,No,Petrol,2,260000 km,4.0,Manual,Rear,02-Mar,Left wheel,Blue,0
+44316016,87112,-,MERCEDES-BENZ,GLA 250,2019,Jeep,Yes,Petrol,2.0 Turbo,5323 km,4.0,Tiptronic,4x4,04-May,Left wheel,Grey,0
+45641216,1411,629,NISSAN,Juke,2015,Jeep,Yes,Petrol,1.6,87112 km,4.0,Automatic,4x4,04-May,Left wheel,Black,0
+45813399,392,919,BMW,535,2012,Sedan,Yes,Petrol,3,204318 km,6.0,Automatic,Rear,04-May,Left wheel,Black,12
+44679525,23521,781,CHEVROLET,Cruze LT,2018,Sedan,No,Petrol,1.4 Turbo,22000 km,4.0,Automatic,Front,04-May,Left wheel,Red,6
+45418626,16935,530,FORD,Fusion,2013,Sedan,No,Petrol,1.6 Turbo,83000 km,4.0,Tiptronic,Front,04-May,Left wheel,Silver,8
+45323316,10349,-,TOYOTA,VOXY,2007,Minivan,Yes,Petrol,2.4,170000 km,4.0,Automatic,Front,04-May,Right-hand drive,Black,6
+45638910,7213,530,NISSAN,Juke,2013,Jeep,Yes,Petrol,1.6,312118 km,4.0,Automatic,Front,04-May,Left wheel,Black,0
+45778144,5331,-,MERCEDES-BENZ,A 160,2004,Sedan,No,Petrol,1.6,130000 km,4.0,Tiptronic,Front,04-May,Left wheel,Black,6
+45803923,20526,640,HYUNDAI,Tucson,2013,Jeep,Yes,Diesel,2,200279 km,4.0,Automatic,Front,04-May,Left wheel,Grey,4
+45803550,9722,765,HYUNDAI,Sonata,2015,Sedan,Yes,LPG,2,719847 km,4.0,Automatic,Front,04-May,Left wheel,Orange,4
+45802190,34657,777,HYUNDAI,H1,2014,Minivan,Yes,Diesel,2.5,154672 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45802203,36564,1091,HYUNDAI,H1,2016,Minivan,Yes,Diesel,2.5,110969 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45648175,314,779,TOYOTA,Camry,2013,Sedan,Yes,Hybrid,2.5,225510 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+45786421,5488,-,TOYOTA,Vitz,2001,Hatchback,No,Petrol,1.5,210000 km,4.0,Manual,Front,04-May,Right-hand drive,Sky blue,3
+45802120,30063,934,HYUNDAI,H1,2015,Universal,Yes,Diesel,2.5,148105 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45809414,15800,769,CHEVROLET,Captiva,2011,Jeep,Yes,Diesel,2.2,255456 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45797480,43952,1249,HYUNDAI,H1,2017,Universal,Yes,Diesel,2.5,111643 km,4.0,Automatic,Front,04-May,Left wheel,Grey,4
+45732043,53154,891,HYUNDAI,Santa FE,2016,Jeep,Yes,Diesel,2,84506 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45816646,14740,645,TOYOTA,Prius,2011,Hatchback,No,Hybrid,1.8,288000 km,4.0,Automatic,Front,04-May,Left wheel,White,8
+45624039,42337,-,FORD,Mustang,2016,Cabriolet,Yes,Petrol,2.3 Turbo,75000 km,4.0,Tiptronic,Rear,02-Mar,Left wheel,Silver,6
+45814804,3763,1053,MERCEDES-BENZ,ML 350,2014,Jeep,Yes,Petrol,3.5,94362 km,6.0,Automatic,Rear,04-May,Left wheel,White,12
+45787521,18189,-,TOYOTA,Prius,2012,Sedan,No,Petrol,1.8,175000 km,4.0,Automatic,Front,04-May,Left wheel,Silver,8
+45759890,862,2455,LEXUS,GX 470,2008,Jeep,Yes,Petrol,4.7,263190 km,8.0,Automatic,4x4,04-May,Left wheel,White,0
+45758167,220,1185,FORD,Escape,2009,Jeep,Yes,Hybrid,2.5,193614 km,4.0,Automatic,Front,04-May,Left wheel,White,0
+45648538,5645,1324,TOYOTA,Highlander,2010,Jeep,Yes,Hybrid,3.3,264877 km,6.0,Automatic,4x4,04-May,Left wheel,White,12
+45757322,7527,830,TOYOTA,Yaris,2019,Sedan,Yes,Petrol,1.5,27656 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+45800993,21953,1187,HONDA,Civic,2014,Sedan,No,Hybrid,1.4,16000 km,8.0,Automatic,4x4,04-May,Right-hand drive,White,10
+45765301,8154,-,HONDA,Cr-v,1998,Jeep,No,Petrol,2,0 km,4.0,Automatic,4x4,04-May,Right-hand drive,White,2
+45771208,21953,781,TOYOTA,Camry,2012,Sedan,No,Petrol,2.5,195053 km,4.0,Automatic,Front,04-May,Left wheel,Black,0
+45801684,19121,531,HYUNDAI,Elantra,2012,Sedan,Yes,Petrol,1.6,121362 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45732386,36065,639,HYUNDAI,Santa FE,2014,Jeep,Yes,Diesel,2,69191 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+43892866,8781,1111,HONDA,FIT,2012,Hatchback,Yes,Hybrid,1.3,83000 km,4.0,Tiptronic,Front,04-May,Right-hand drive,Green,12
+45810403,6247,760,CHEVROLET,Cruze,2010,Sedan,Yes,Petrol,1.8,40772 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45810513,16289,642,CHEVROLET,Orlando,2012,Jeep,Yes,Diesel,2,172000 km,4.0,Automatic,Front,04-May,Left wheel,Grey,4
+45807330,77775,1604,MERCEDES-BENZ,GL 63 AMG,2014,Jeep,Yes,Petrol,5.5,433811 km,8.0,Automatic,4x4,04-May,Left wheel,Black,10
+45733554,2822,-,BMW,520 Vanos,1995,Sedan,Yes,Petrol,2,350000 km,6.0,Manual,Rear,04-May,Left wheel,Blue,2
+45769914,549,781,SUBARU,Forester,2012,Jeep,Yes,Petrol,2.5,148213 km,4.0,Automatic,4x4,04-May,Left wheel,Blue,0
+45744824,6981,1095,DAEWOO,Lacetti,2008,Sedan,Yes,Petrol,2,103246 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45792882,27284,891,HYUNDAI,Elantra,2016,Sedan,No,Petrol,2,105394 km,4.0,Tiptronic,Front,04-May,Left wheel,Black,12
+45330228,32929,-,BMW,428 Sport Line,2013,Coupe,Yes,Petrol,2.0 Turbo,160000 km,4.0,Automatic,Rear,02-Mar,Left wheel,Black,12
+45776745,18817,-,NISSAN,Patrol,1990,Jeep,No,Diesel,2.8 Turbo,333333 km,4.0,Manual,Rear,04-May,Left wheel,Black,0
+45749534,4234,-,HONDA,Civic,1997,Hatchback,Yes,Petrol,1.4,0 km,4.0,Manual,Front,02-Mar,Left wheel,Blue,6
+45789555,15053,-,MERCEDES-BENZ,E 320,2004,Sedan,Yes,Petrol,3.2,214000 km,6.0,Tiptronic,Rear,04-May,Left wheel,Grey,8
+45797276,15458,966,HYUNDAI,Genesis,2009,Coupe,Yes,Petrol,2,123346 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45809760,2901,473,CHEVROLET,Cruze,2014,Sedan,Yes,Petrol,1.4,80827 km,4.0,Automatic,Front,04-May,Left wheel,Green,12
+45810325,706,1138,PORSCHE,911,2013,Coupe,Yes,Petrol,3.8,64464 km,6.0,Automatic,Rear,02-Mar,Left wheel,Black,12
+45813375,314,382,FORD,Fusion,2015,Sedan,Yes,Hybrid,2,91760 km,4.0,Automatic,Front,04-May,Left wheel,Black,12
+45756975,15681,1811,LEXUS,GX 460,2010,Jeep,Yes,Petrol,4.6,275240 km,8.0,Automatic,4x4,04-May,Left wheel,Silver,0
+45776758,26657,-,MERCEDES-BENZ,Sprinter,2004,Microbus,No,Diesel,2.2 Turbo,300000 km,4.0,Manual,Rear,04-May,Left wheel,White,1
+45550733,10663,988,TOYOTA,Prius,2007,Hatchback,No,Petrol,1.5,318400 km,4.0,Automatic,Front,04-May,Left wheel,Silver,6
+44094036,12858,765,FORD,Focus SE,2015,Sedan,No,Petrol,2,91200 km,4.0,Automatic,Front,04-May,Left wheel,Sky blue,10
+45642797,1019,917,BMW,X5,2013,Jeep,Yes,Diesel,3,137802 km,6.0,Automatic,4x4,04-May,Left wheel,Black,12
+45760895,549,917,BMW,535,2013,Sedan,Yes,Hybrid,3,151586 km,6.0,Automatic,Rear,04-May,Left wheel,White,12
+45742789,12858,-,KIA,Picanto,2016,Hatchback,No,Petrol,1.2,107000 km,4.0,Manual,Front,04-May,Left wheel,Silver,2
+45783859,15000,-,BMW,328,2008,Sedan,Yes,CNG,3,210408 km,6.0,Tiptronic,Rear,04-May,Left wheel,White,12
+45808992,85553,1156,FORD,Explorer,2017,Jeep,Yes,Petrol,2.3,100567 km,4.0,Automatic,Front,04-May,Left wheel,Black,4
+45731735,44752,1091,HYUNDAI,H1,2016,Universal,Yes,Diesel,2.5,86000 km,4.0,Automatic,Front,04-May,Left wheel,Grey,4
+45797948,17158,687,HYUNDAI,Elantra,2010,Sedan,Yes,Petrol,1.6,122740 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+45782067,12231,-,MITSUBISHI,Airtrek,2005,Jeep,No,LPG,2.4,144000 km,4.0,Tiptronic,4x4,04-May,Right-hand drive,White,16
+45534351,11917,11714,MERCEDES-BENZ,E 500 AMG,2003,Sedan,Yes,Petrol,5,150000 km,12.0,Tiptronic,Rear,04-May,Right-hand drive,White,12
+45753393,1254,-,MITSUBISHI,Lancer,1997,Sedan,No,Petrol,1.3,100000 km,4.0,Manual,Rear,04-May,Left wheel,Red,0
+45624923,94,-,HONDA,FIT,2003,Hatchback,No,Petrol,1.5,178000 km,4.0,Variator,Front,04-May,Right-hand drive,Silver,4
+45726679,25591,640,SSANGYONG,Korando,2013,Jeep,Yes,Diesel,2,85704 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45803059,14897,836,HYUNDAI,Santa FE,2010,Jeep,Yes,Diesel,2,58962 km,4.0,Automatic,Front,04-May,Left wheel,White,4
+45770405,23521,779,TOYOTA,Camry,2013,Sedan,Yes,Hybrid,2.5,90000 km,4.0,Tiptronic,Front,04-May,Left wheel,White,12
+45787329,3450,-,RENAULT,Clio,1995,Hatchback,No,Petrol,1.2,50000 km,3.0,Manual,Front,02-Mar,Left wheel,Green,0
+45763505,706,777,MAZDA,616,2014,Sedan,Yes,Petrol,2.5,0 km,4.0,Automatic,Front,04-May,Left wheel,Red,12
+45767451,1019,1537,TOYOTA,Highlander,2009,Sedan,Yes,Hybrid,3.3,318358 km,6.0,Automatic,4x4,04-May,Left wheel,Black,12
+45636958,16935,765,FORD,Fusion,2015,Sedan,Yes,Petrol,2,71454 km,4.0,Automatic,Front,04-May,Left wheel,Black,0
+45757670,19444,781,TOYOTA,Camry,2012,Sedan,Yes,Petrol,2.5,0 km,4.0,Tiptronic,Front,04-May,Left wheel,Black,6
+45733244,11604,639,HYUNDAI,Sonata,2014,Sedan,Yes,LPG,2,346470 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45802837,51965,891,HYUNDAI,Santa FE,2016,Jeep,Yes,Diesel,2,59515 km,4.0,Automatic,Front,04-May,Left wheel,Blue,4
+45646428,706,394,TOYOTA,Camry,2014,Sedan,Yes,Hybrid,2.5,115312 km,4.0,Automatic,Front,04-May,Left wheel,Grey,12
+45801896,9408,-,MERCEDES-BENZ,C 220,1999,Sedan,No,Diesel,2.2 Turbo,111111 km,4.0,Manual,Rear,04-May,Left wheel,Silver,4
+45797732,13328,1347,HYUNDAI,H1,2008,Minivan,Yes,Diesel,2.5,74444 km,4.0,Automatic,Front,04-May,Left wheel,Yellow,4
+45762683,17876,-,NISSAN,Serena,2012,Minivan,No,Petrol,2,143000 km,4.0,Tiptronic,Front,04-May,Right-hand drive,White,12
+45767013,549,2866,NISSAN,Maxima,2004,Sedan,Yes,Petrol,3.5,299709 km,6.0,Automatic,Front,04-May,Left wheel,Grey,12
+45732074,20071,-,TOYOTA,RAV 4,2008,Jeep,No,Petrol,2.4,135000 km,4.0,Automatic,4x4,04-May,Left wheel,Silver,8
+45731782,22894,862,HYUNDAI,H1,2011,Minivan,Yes,Diesel,2.5,124444 km,4.0,Automatic,Front,04-May,Left wheel,Yellow,4
+45662111,2901,503,HONDA,Civic,2012,Sedan,Yes,Hybrid,1.5,146403 km,4.0,Automatic,Front,04-May,Left wheel,White,0
+45766794,15681,-,MITSUBISHI,Pajero,1997,Jeep,No,Petrol,2.4,142000 km,4.0,Automatic,4x4,02-Mar,Left wheel,Blue,6
+45764126,39829,1811,LEXUS,GX 460,2010,Jeep,Yes,Petrol,4.6,155821 km,8.0,Automatic,4x4,04-May,Left wheel,Black,0
+45768549,706,1646,LEXUS,GX 460,2015,Jeep,Yes,Petrol,4.6,102907 km,8.0,Automatic,4x4,04-May,Left wheel,Black,0
+44698379,18660,-,HYUNDAI,Sonata,2013,Sedan,Yes,Petrol,2.4,130000 km,4.0,Tiptronic,Front,04-May,Left wheel,Black,6
+45770233,22580,1017,MERCEDES-BENZ,E 300,2017,Sedan,Yes,Petrol,2,50930 km,4.0,Automatic,Rear,04-May,Left wheel,Black,12
+45803455,11604,639,HYUNDAI,Sonata,2014,Sedan,Yes,LPG,2,264872 km,4.0,Automatic,Front,04-May,Left wheel,Silver,4
+45760030,314,259,CHEVROLET,Volt,2014,Hatchback,Yes,Hybrid,1.4,131893 km,4.0,Automatic,Front,04-May,Left wheel,Brown,0
+45810339,5488,751,GMC,TERRAIN,2013,Jeep,Yes,Petrol,2.4,138958 km,4.0,Automatic,Front,04-May,Left wheel,Black,12
+45759786,4300,-,MERCEDES-BENZ,208,1985,Universal,No,Diesel,2.5,1111111 km,4.0,Manual,Rear,04-May,Left wheel,Black,1
+45642844,18817,609,TOYOTA,Camry,2018,Sedan,Yes,Hybrid,2.5,35058 km,4.0,Automatic,Front,04-May,Left wheel,White,12
+44921934,21169,697,HONDA,Hr-v EX,2015,Jeep,No,Petrol,1.8,33330 km,4.0,Automatic,4x4,04-May,Left wheel,Grey,8
+45462592,9095,-,FIAT,500,2011,Coupe,No,Petrol,1.2,141000 km,4.0,Automatic,Front,02-Mar,Right-hand drive,Red,4
+45634898,1568,639,VOLKSWAGEN,Jetta,2014,Sedan,Yes,Diesel,2,82392 km,4.0,Automatic,Front,04-May,Left wheel,Silver,12
+45777114,3136,-,SUBARU,Legacy,2005,Goods wagon,No,Petrol,2.0 Turbo,180000 km,6.0,Tiptronic,4x4,04-May,Right-hand drive,Blue,6

@@ -150,9 +150,9 @@ class CarRecord:
             return None
 
         v = str(value).strip().lower()
-        if v in ("yes", "true", "t", "1", "turbo"):
+        if v in ("yes", "true", "t", "1", "turbo","Right-hand drive"):
             return True
-        if v in ("no", "false", "0"):
+        if v in ("no", "false", "0","Left wheel"):
             return False
 
         return None
@@ -182,7 +182,7 @@ class CarRecord:
             gear_box_type=self.Gear_box_type,
             drive_wheels=self.Drive_wheels,
             doors=self.Doors,
-            wheel=self.Wheel,
+            right_wheel=self._toBool(self.Wheel),
             color=self.Color,
             airbags=self.Airbags,
             engine=engine
