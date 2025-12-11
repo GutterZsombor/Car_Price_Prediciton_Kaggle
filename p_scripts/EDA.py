@@ -81,17 +81,59 @@ def meanMedianallImportant(cars):
 
     return returndict
 
+def carstoDataFrame(cars):
+    records = []
 
+    for car in cars:
+        records.append({
+            "price": car.price,
+            "levy": car.levy,
+            "manufacturer": car.manufacturer,
+            "model": car.model,
+            "category": car.category,
+            "fuel_type": car.fuel_type,
+            "gear_box_type": car.gear_box_type,
+            "drive_wheels": car.drive_wheels,
+            "doors": car.doors,
+            "mileage": car.mileage,
+            "prod_year": car.prod_year,
+            "engine_volume": car.engine.volume if car.engine else None,
+            "turbo": 1 if car.engine.turbo else 0,
+            "cylinders": car.cylinders,
+            "airbags": car.airbags,
+            "color": car.color,
+            "rightw": 1 if car.right_wheel else 0,
+            "leather":1 if car.leather_interior else 0
+        })
+    
+
+    return pd.DataFrame(records)
+
+def pricebyCategory(df, column, min=50):
+    
+    #rturns mean price per category if there is more than min amount of them .
+    
+    grp = df.groupby(column)["price"].agg(["mean", "median", "count"]).sort_values("mean", ascending=False)
+    return grp[grp["count"] >= min]
+
+def numericDF(df):
+    numeric_columns = [
+        "price", "mileage", "prod_year", "engine_volume", "turbo",
+        "cylinders", "airbags", "levy", "doors" ,"rightw","leather"
+    ]
+
+    return df[numeric_columns ]
 
 
 
 if __name__ == "__main__":
     carRecords = CarRecord.loadFromCSV("p_scripts/first150car.csv")
+    #carRecords = CarRecord.loadFromCSV("datasets/deepcontractor/car-price-prediction-challenge/versions/1/car_price_prediction.csv")
 
     print("Loaded cars:", len(carRecords))
     cars=[]
     for c in carRecords:
-        #print(c)
+        #print(c.toCar().right_wheel)
         cars.append(c.toCar())
     #print(cars)
 
@@ -111,3 +153,19 @@ if __name__ == "__main__":
     # price_vs_prod_year_corr=priceCorrelation(cars, "prod_year", heatmap=True)
     # price_vs_levy_corr=priceCorrelation(cars, "levy", heatmap=True)
     # price_vs_evolume_corr=priceCorrelation(cars, "engine.volume", heatmap=True)
+
+    #Manufacturer and model distribution
+    #plotCategoryDistribution(cars,"manufacturer",20)
+    #plotCategoryDistribution(cars,"model",20)
+    #plotCategoryDistribution(cars, "category", top=20)
+    #plotCategoryDistribution(cars, "gear_box_type", top=20)
+    
+    #plotCategoryDistribution(cars, "right_wheel", top=20)
+
+    #plotAllCategoryDistributions(cars, top=20)
+
+    #price chategorie colaration:
+    df = carstoDataFrame(cars)
+    #print(pricebyCategory(df, "manufacturer",5))
+    df_numeric=numericDF(df)
+    correlationHeatmap(df_numeric,True)

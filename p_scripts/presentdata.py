@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
+
 def dispTablefromDict(dict):
    
     #Displays dictionary as a  pandas dataframe table
@@ -118,3 +119,73 @@ def priceCorrelation(cars,efectpropertie ,heatmap=True):
 
     #if Corr_Matrix needed at some point return
     return Corr_Matrix
+
+def correlationHeatmap(df_numeric,clear=False,threshold=0.30):
+
+    #instead of price vs single cathegori its the colaration of all
+    
+    Corr_Matrix = df_numeric.corr()
+    if clear:
+        #clean up Cor matrix only give the colaration where its meaningfull everywhere else0
+        #for now threshold is set <=|30| colud be tweaked
+        Corr_Matrix = Corr_Matrix.where(Corr_Matrix.abs() >= threshold, 0)
+        
+    plt.figure(figsize=(10, 6))
+    sns.heatmap(Corr_Matrix, annot=True, cmap="coolwarm", fmt=".2f")
+    plt.title("Correlation Heatmap")
+    plt.show()
+        #same as in price vs cathegorie collaration
+        #if Corr_Matrix needed at some point return
+    return Corr_Matrix
+    
+       
+
+
+def plotCategoryDistribution(cars, attribute, top=20):
+    #frequency distribution for string category.
+    #eg: manufacturer and model
+
+    values = [getattr(car, attribute) for car in cars if getattr(car, attribute) is not None]
+
+    s = pd.Series(values)
+
+
+    counts = s.value_counts().head(top)
+
+    # Plot
+    plt.figure(figsize=(10, 6))
+    counts.sort_values().plot(kind="barh", color="skyblue")
+
+    plt.title(f"Top {top} Most Common '{attribute}' Values")
+    plt.xlabel("Frequency")
+    plt.ylabel(attribute)
+
+    plt.grid(axis="x", linestyle="--", alpha=0.5)
+    plt.tight_layout()
+    plt.show()
+
+def plotAllCategoryDistributions(cars, top=20):
+
+
+    
+    #Runs plotategorydist for all categorical
+    
+    categorical_attributes = [
+        "manufacturer",
+        "model",
+        "category",
+        "leather_interior",
+        "fuel_type",
+        "gear_box_type",
+        "drive_wheels",
+        "doors",
+        "wheel",
+        "color"
+    ]
+
+    for attr in categorical_attributes:
+        print(f"\n--- Plotting top {top} for {attr} ---\n")
+        try:
+            plotCategoryDistribution(cars, attr, top)
+        except Exception as e:
+            print(f"Error plotting '{attr}': {e}")

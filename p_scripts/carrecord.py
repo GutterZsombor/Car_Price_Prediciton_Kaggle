@@ -21,7 +21,7 @@ class CarRecord:
         self.Fuel_type = self._epmptyandTypeParse(Fuel_type, str)
         self.Gear_box_type = self._epmptyandTypeParse(Gear_box_type, str)
         self.Drive_wheels = self._epmptyandTypeParse(Drive_wheels, str)
-        self.Doors = self._epmptyandTypeParse(Doors, str)
+        self.Doors = self._doorParse(self._epmptyandTypeParse(Doors, str))
         self.Wheel = self._epmptyandTypeParse(Wheel, str)
         self.Color = self._epmptyandTypeParse(Color, str)
 
@@ -94,6 +94,41 @@ class CarRecord:
             .strip()
         )
 
+    def _doorParse(self,value):
+        # excel converted strings like '02-Mar' to (2, 3)
+        #also there is ">5"  treated as 2 + booth
+        
+        
+        #doorandboot=door+1 not need all cars have boot
+        # there is only 3 option Mar and May 2 or 4 doors +boot
+        #>5 treated as 2 doors + booth
+
+
+        if value is None:
+            return None
+
+        text = str(value).strip()
+
+        #  ">5" 
+        if text == ">5":
+            return 2
+
+        # format "02-Mar" or "04-May"
+        if "-" not in text:
+            return None
+
+        left, right = text.split("-", 1)
+
+        # Convert "02"  2
+        try:
+            door = int(left)
+            return door
+        except:
+            return None
+
+
+
+
 
     #representation
     def __repr__(self):
@@ -150,9 +185,9 @@ class CarRecord:
             return None
 
         v = str(value).strip().lower()
-        if v in ("yes", "true", "t", "1", "turbo","Right-hand drive"):
+        if v in ("yes", "true", "t", "1", "turbo","right-hand drive"):
             return True
-        if v in ("no", "false", "0","Left wheel"):
+        if v in ("no", "false", "0","left wheel"):
             return False
 
         return None

@@ -1,6 +1,7 @@
 
 #Better than Car Record clean and contains neccesary functions. evritying else is hndeled in the car records
 
+import pandas as pd
 class Engine:
     def __init__(self, volume, turbo):
         self.volume = volume   # float or None
@@ -38,4 +39,30 @@ class Car:
         self.engine = engine
 
     def __repr__(self):
-        return f"Car(ID={self.ID}, model={self.model}, Price={self.price})"
+        return f"Car(ID={self.ID}, model={self.model}, Price={self.price}, Rigth wheel={self.right_wheel})"
+        # props = ", ".join(f"{k}={v}" for k, v in self.__dict__.items())
+        # return f"Car({props})"
+    
+    # def toDataFrame(cars):
+    
+    #     #Convert a list of Car objects into a pandas DataFrame.
+        
+    #     records = []
+
+    #     for car in cars:
+    #         records.append({
+    #             "price": car.price,
+    #             "manufacturer": car.manufacturer,
+    #             "model": car.model,
+    #             "category": car.category,
+    #             "fuel_type": car.fuel_type,
+    #             "gear_box_type": car.gear_box_type,
+    #             "drive_wheels": car.drive_wheels,
+    #             "doors": car.doors,
+    #             "mileage": car.mileage,
+    #             "prod_year": car.prod_year,
+    #             "engine_volume": car.engine.volume if car.engine else None,
+    #             "turbo": car.engine.turbo if car.engine else None,
+    #         })
+
+    #     return pd.DataFrame(records)
