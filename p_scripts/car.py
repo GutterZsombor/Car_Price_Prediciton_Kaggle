@@ -2,6 +2,7 @@
 #Better than Car Record clean and contains neccesary functions. evritying else is hndeled in the car records
 
 import pandas as pd
+
 class Engine:
     def __init__(self, volume, turbo):
         self.volume = volume   # float or None
@@ -66,3 +67,31 @@ class Car:
     #         })
 
     #     return pd.DataFrame(records)
+
+
+    # #this pipline has been used in EDA prior but i put it here as a centrelized place
+    # #for the model this will conect model to everithing else prior
+    # #Car object become usles now but its integral part of code but thiis is the most used part from now own
+    # def createUsableData():
+
+    #     carRecords = CarRecord.loadFromCSV("p_scripts/first150car.csv")
+    #     #carRecords = CarRecord.loadFromCSV("datasets/deepcontractor/car-price-prediction-challenge/versions/1/car_price_prediction.csv")
+
+    #     print("Loaded cars:", len(carRecords))
+    #     cars=[]
+    #     for c in carRecords:
+    #         cars.append(c.toCar())
+
+    #     df = carstoDataFrame(cars)
+    #     #print(df.head())
+    #     #print(pricebyCategory(df, "manufacturer",5))
+        
+    #     df_encoded = encodeallStrings(df,5,True)   #.isnull().sum()
+    #     #print(df_encoded.head())
+
+    #     return df_encoded
+    
+    # def heatMapforALL(df_enc,clear=False,threshold=0.30):
+
+    #     corrM=correlationHeatmap(df_enc,clear=False,threshold=0.30)
+    #     return corrM

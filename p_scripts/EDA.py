@@ -1,7 +1,7 @@
-from carrecord import CarRecord
-from car import Car
+from carrecord import CarRecord 
 import statistics
 from presentdata import *
+from encode_string import encodeallStrings
 
 
 #if only one categorie needed
@@ -86,14 +86,9 @@ def carstoDataFrame(cars):
 
     for car in cars:
         records.append({
+            #Numeric
             "price": car.price,
             "levy": car.levy,
-            "manufacturer": car.manufacturer,
-            "model": car.model,
-            "category": car.category,
-            "fuel_type": car.fuel_type,
-            "gear_box_type": car.gear_box_type,
-            "drive_wheels": car.drive_wheels,
             "doors": car.doors,
             "mileage": car.mileage,
             "prod_year": car.prod_year,
@@ -101,9 +96,18 @@ def carstoDataFrame(cars):
             "turbo": 1 if car.engine.turbo else 0,
             "cylinders": car.cylinders,
             "airbags": car.airbags,
-            "color": car.color,
             "rightw": 1 if car.right_wheel else 0,
-            "leather":1 if car.leather_interior else 0
+            "leather":1 if car.leather_interior else 0,
+
+            #string
+            "manufacturer": car.manufacturer,
+            "model": car.model,
+            "category": car.category,
+            "fuel_type": car.fuel_type,
+            "gear_box_type": car.gear_box_type,
+            "drive_wheels": car.drive_wheels,
+            "color": car.color
+
         })
     
 
@@ -125,17 +129,47 @@ def numericDF(df):
     return df[numeric_columns ]
 
 
+#this pipline has been used in EDA prior but i put it here as a centrelized place
+#for the model this will conect model to everithing else prior
+#Car object become usles now but its integral part of code but thiis is the most used part from now own
+def createUsableData():
+
+    #carRecords = CarRecord.loadFromCSV("p_scripts/first150car.csv")
+    carRecords = CarRecord.loadFromCSV("datasets/deepcontractor/car-price-prediction-challenge/versions/1/car_price_prediction.csv")
+
+    print("Loaded cars:", len(carRecords))
+    cars=[]
+    for c in carRecords:
+        cars.append(c.toCar())
+
+    df = carstoDataFrame(cars)
+    #print(df.head())
+    #print(pricebyCategory(df, "manufacturer",5))
+    
+    df_encoded = encodeallStrings(df,5,True)   #.isnull().sum()
+    #print(df_encoded.head())
+    #print(df_encoded.dtypes)
+
+    return df_encoded
+    
+def heatMapforALL(df_enc,clear=False,threshold=0.30,show=False):
+
+    corrM=correlationHeatmap(df_enc,clear,threshold,show)
+    return corrM
+
+
+
 
 if __name__ == "__main__":
-    carRecords = CarRecord.loadFromCSV("p_scripts/first150car.csv")
-    #carRecords = CarRecord.loadFromCSV("datasets/deepcontractor/car-price-prediction-challenge/versions/1/car_price_prediction.csv")
+    # carRecords = CarRecord.loadFromCSV("p_scripts/first150car.csv")
+    carRecords = CarRecord.loadFromCSV("datasets/deepcontractor/car-price-prediction-challenge/versions/1/car_price_prediction.csv")
 
     print("Loaded cars:", len(carRecords))
     cars=[]
     for c in carRecords:
         #print(c.toCar().right_wheel)
         cars.append(c.toCar())
-    #print(cars)
+    # #print(cars)
 
     #print("Mean, Median statistics:")
     #print(meanMedianallImportant(cars))
@@ -160,12 +194,18 @@ if __name__ == "__main__":
     #plotCategoryDistribution(cars, "category", top=20)
     #plotCategoryDistribution(cars, "gear_box_type", top=20)
     
-    #plotCategoryDistribution(cars, "right_wheel", top=20)
+    #plotCategoryDistribution(cars, "levy", top=50)
 
-    #plotAllCategoryDistributions(cars, top=20)
+    #plotAllCategoryDistributions(cars, top=30)
 
-    #price chategorie colaration:
-    df = carstoDataFrame(cars)
-    #print(pricebyCategory(df, "manufacturer",5))
-    df_numeric=numericDF(df)
-    correlationHeatmap(df_numeric,True)
+    # #price chategorie colaration:
+    # df = carstoDataFrame(cars)
+    # print(df.head())
+    # print(pricebyCategory(df, "manufacturer",5))
+    # #df_numeric=numericDF(df)
+    # #correlationHeatmap(df_numeric,True)
+    # df_encoded = encodeallStrings(df,5,True)
+    # print(df_encoded.head())
+
+    df_enc=createUsableData()
+    corrM=heatMapforALL(df_enc,True,0.25, True)

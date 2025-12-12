@@ -205,7 +205,7 @@ class CarRecord:
         return Car(
             ID=self.ID,
             price=self.Price,
-            levy=self.Levy,
+            levy=self.Levy if self.Levy is not None else 0,
             manufacturer=self.Manufacturer,
             model=self.Model,
             prod_year=self.Prod_year,

@@ -48,7 +48,7 @@ def priceDistriutionPlot(cars,scaleLog):
 
     plt.figure(figsize=(10,5))
 
-    plt.hist(values, bins=50, alpha=0.6, density=True, label="Histogram")
+    plt.hist(values, bins=1500, alpha=0.6, density=True, label="Histogram")
     #kernel density estimate (KDE) https://en.wikipedia.org/wiki/Kernel_density_estimation
     s = pd.Series(values) 
     s.plot(kind="kde", linewidth=2, label="KDE")
@@ -120,7 +120,7 @@ def priceCorrelation(cars,efectpropertie ,heatmap=True):
     #if Corr_Matrix needed at some point return
     return Corr_Matrix
 
-def correlationHeatmap(df_numeric,clear=False,threshold=0.30):
+def correlationHeatmap(df_numeric,clear=False,threshold=0.30,show=False):
 
     #instead of price vs single cathegori its the colaration of all
     
@@ -129,11 +129,11 @@ def correlationHeatmap(df_numeric,clear=False,threshold=0.30):
         #clean up Cor matrix only give the colaration where its meaningfull everywhere else0
         #for now threshold is set <=|30| colud be tweaked
         Corr_Matrix = Corr_Matrix.where(Corr_Matrix.abs() >= threshold, 0)
-        
-    plt.figure(figsize=(10, 6))
-    sns.heatmap(Corr_Matrix, annot=True, cmap="coolwarm", fmt=".2f")
-    plt.title("Correlation Heatmap")
-    plt.show()
+    if show:    
+        plt.figure(figsize=(10, 6))
+        sns.heatmap(Corr_Matrix, annot=True, cmap="coolwarm", fmt=".2f")
+        plt.title("Correlation Heatmap")
+        plt.show()
         #same as in price vs cathegorie collaration
         #if Corr_Matrix needed at some point return
     return Corr_Matrix
@@ -172,6 +172,7 @@ def plotAllCategoryDistributions(cars, top=20):
     
     categorical_attributes = [
         "manufacturer",
+        "levy",
         "model",
         "category",
         "leather_interior",
@@ -180,11 +181,12 @@ def plotAllCategoryDistributions(cars, top=20):
         "drive_wheels",
         "doors",
         "wheel",
-        "color"
+        "color",
+       
     ]
 
     for attr in categorical_attributes:
-        print(f"\n--- Plotting top {top} for {attr} ---\n")
+        print(f"\n Plotting top {top} for {attr}\n")
         try:
             plotCategoryDistribution(cars, attr, top)
         except Exception as e:
