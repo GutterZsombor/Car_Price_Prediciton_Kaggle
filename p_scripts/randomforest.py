@@ -73,11 +73,27 @@ if __name__ == "__main__":
 
     print("Random Forest RMSE:", rmse)
 
-    results = pd.DataFrame({
-    "actual":y_test.values,
-    "predicted": y_pred,
-    "difference": y_test.values-y_pred
-    })
+    diference = y_test.values - y_pred
+    relative_error =np.where(
+        y_test.values != 0,#chance for division by zero if price filter is turned off
+        (diference / y_test.values) * 100,
+        np.nan
+    )
 
+
+    results = pd.DataFrame({
+    "actual": y_test.values,
+    "predicted": y_pred,
+    "difference": diference,
+    "relative_error":relative_error,
+    "abs_relative_error":np.abs(relative_error)
+    })
+    results = results.round(2)#just for presenting
     print(results.head(20))
+    mean_abs_rel_error = results["abs_relative_error"].mean()
+    print("Mean absolute relative error (%):", round(mean_abs_rel_error, 2),"%",end="  ")
+    median_abs_rel_error = results["abs_relative_error"].median()
+    print("Median absolute relative error (%):", round(median_abs_rel_error, 2),end="\n\n")
+    print("Model mean preciseness:", 100- round(mean_abs_rel_error, 2),"%", end="    ")
+    print("Model meadian preciseness:", 100- round(median_abs_rel_error, 2),"%")
     #getweights(df_enc)
