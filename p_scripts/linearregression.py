@@ -16,7 +16,7 @@ from sklearn.linear_model import LassoCV
 if __name__ == "__main__":
     
     df_enc=createUsableData()
-    corrM=heatMapforALL(df_enc,True,0.25)#,sgow:True
+    #corrM=heatMapforALL(df_enc,True,0.25)#,sgow:True
 
     #getweights(df_enc)
 

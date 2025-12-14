@@ -48,7 +48,7 @@ def priceDistriutionPlot(cars,scaleLog):
 
     plt.figure(figsize=(10,5))
 
-    plt.hist(values, bins=1500, alpha=0.6, density=True, label="Histogram")
+    plt.hist(values, bins=70, alpha=0.6, density=True, label="Histogram")
     #kernel density estimate (KDE) https://en.wikipedia.org/wiki/Kernel_density_estimation
     s = pd.Series(values) 
     s.plot(kind="kde", linewidth=2, label="KDE")

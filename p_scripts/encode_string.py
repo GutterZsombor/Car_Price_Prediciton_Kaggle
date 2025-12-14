@@ -42,7 +42,8 @@ strings = [
     "fuel_type",
     "gear_box_type",
     "drive_wheels",
-    "color"
+    "color",
+    "mileage_per_year"
 ]
 
 def encodeallStrings(df,min=20,drop=False):
@@ -135,7 +136,7 @@ def kagleFilter(df):
     df = df[df["manufacturer"].value_counts()[df["manufacturer"]].values > 180]
     df = df[df["model"].value_counts()[df["model"]].values > 180]
 
-    df = df[np.log(df["price"]) > 7]    # price < 1100 (7)  <1800 (7.5) based on log(price) histogram
+    df = df[np.log(df["price"]) > 8]    # price < 1100 (7)  <1800 (7.5) based on log(price) histogram
     #remove extremly overvalued cars
     df = df[np.log(df["price"]) <= 11]
 

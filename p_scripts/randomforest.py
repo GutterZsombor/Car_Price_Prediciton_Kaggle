@@ -12,7 +12,7 @@ from weight_adjustmodell import getweights
 if __name__ == "__main__":
     
     df_enc=createUsableData()
-    corrM=heatMapforALL(df_enc,True,0.25)#,sgow:True
+    #corrM=heatMapforALL(df_enc,True,0.25)#,sgow:True
     #print(corrM)
 
     #Split into (scalr)y=price (vectro) X variable

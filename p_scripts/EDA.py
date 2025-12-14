@@ -184,7 +184,7 @@ if __name__ == "__main__":
 
     #Price correlation 
     # price_vs_milage_corr=priceCorrelation(cars, "mileage", heatmap=True)
-    # price_vs_prod_year_corr=priceCorrelation(cars, "prod_year", heatmap=True)
+    #price_vs_prod_year_corr=priceCorrelation(cars, "prod_year", heatmap=True)
     # price_vs_levy_corr=priceCorrelation(cars, "levy", heatmap=True)
     # price_vs_evolume_corr=priceCorrelation(cars, "engine.volume", heatmap=True)
 
@@ -208,4 +208,4 @@ if __name__ == "__main__":
     # print(df_encoded.head())
 
     df_enc=createUsableData()
-    corrM=heatMapforALL(df_enc,True,0.25, True)
+    corrM=heatMapforALL(df_enc,False,0.25, True)
