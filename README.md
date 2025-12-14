@@ -1,4 +1,4 @@
-Car Price Prediction
+##Car Price Prediction (WIP)
 
 A data-driven regression project using feature engineering and scikit-learn.
 
@@ -26,20 +26,15 @@ A complete PDF report is included in the repository.
 Repository Structure
 Car-Price-Prediction/
 │
-├── src/
+├── p_scripts/
 │   ├── EDA.py
 │   ├── encoder.py
 │   ├── weight_adjustmodell.py
-│   ├── train_models.py
-│   └── utils/
-│
-├── figures/
-├── data/
-│
-├── report/
-│   └── Programming_Assignment_2025.pdf
-│
-└── README.md
+│   ├── linearregresion.py
+|   ├── rendomforest.py
+|   ├── Car.py
+|   ├── Carrecord.py
+
 
 Key Components
 1. Custom Mean-Price Encoder
